@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Fractals</title>
+    <style>
+      body {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: center;
+        background-color: #ffffa3;
+      }
+      #inputs {
+        padding: 3px;
+        border: 1px gray solid;
+        background-color: rgb(241, 237, 237);
+        display: flex;
+        flex-direction: column;
+      }
+      label {
+        font-weight: bolder;
+      }
+    </style>
+  </head>
+  <body>
+    <body>
+      <div id="inputs">
+      <b>Quadratic Julia set</b>
+
+      <p>Julia constant</p>
+      <label for="real">Real</label>
+      <p><b>Min: </b>-2<b> Max: </b>2</p>
+      
+      <input type="number" id="real" value="-0.7269" step="0.0001" min="-2" max="2">
+      <br>
+      <label for="imag">Imaginary</label>
+      <p><b>Min: </b>-1.5<b> Max: </b>1.5</p>
+      <input type="number" id="imag" value="0.1889"  step="0.0001" min="-1.5" max="1.5">
+      <button id="render">Render</button>
+    </div>
+      <canvas id="fractal-canvas" height="1024" width="1024"></canvas>
+      <script src='./bootstrap.js'></script>
+    </body>    
+    <script src="./bootstrap.js"></script>
+  </body>
+</html>
