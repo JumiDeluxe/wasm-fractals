@@ -4,7 +4,6 @@ import { memory } from "wasm-fractals/wasm_fractals_bg";
 let fractal = JuliaSet.new(420, -0.7269, 0.1889);
 const width = fractal.width();
 const height = fractal.height();
-console.log("height "+height+" width "+width);
 
 const canvas = document.getElementById("fractal-canvas");
 const ctx = canvas.getContext("2d");
@@ -38,8 +37,6 @@ const drawFractal = () => {
   }
 
   ctx.stroke();
-
-  console.log("drawn");
 };
 
 drawFractal();
